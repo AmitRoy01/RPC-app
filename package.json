@@ -1,0 +1,16 @@
+{
+    "name": "rpc-app",
+    "version": "1.0.0",
+    "description": "A simple client-server application using RPC in Node.js.",
+    "main": "server.js",
+    "scripts": {
+      "start-server": "node server.js",
+      "start-client": "node client.js"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+      "net": "^1.0.2"
+    }
+  }
+  
