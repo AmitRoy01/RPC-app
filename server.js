@@ -1,6 +1,5 @@
 const net = require('net');
 
-// Define the RPC methods
 const rpcMethods = {
     factorial(n) {
         if (n < 0) return "Invalid input";
@@ -14,7 +13,6 @@ const rpcMethods = {
     }
 };
 
-// Create a server to handle RPC requests
 const server = net.createServer(socket => {
     socket.on('data', data => {
         try {

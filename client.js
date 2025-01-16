@@ -1,6 +1,5 @@
 const net = require('net');
 
-// Function to call RPC methods
 function callRPCMethod(method, args) {
     return new Promise((resolve, reject) => {
         const client = net.createConnection({ port: 5000 }, () => {
@@ -25,7 +24,6 @@ function callRPCMethod(method, args) {
     });
 }
 
-// Example usage
 (async () => {
     try {
         const result1 = await callRPCMethod("factorial", [4]);
